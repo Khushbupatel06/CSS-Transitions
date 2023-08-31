@@ -1,0 +1,55 @@
+.circle {
+    width: 300px;
+    height: 300px;
+    background-color: #9db4c0;
+    transition: background-color 1s 1s;
+}
+
+/* TRANSITION: Property name/Duration/Timing Function/Delay  */
+
+.circle:hover {
+    background-color: #253237;
+    border-radius: 50%;
+}
+
+/* TRANSITION: Property name/Duration/Timing Function/Delay  */
+h1 {
+    background-color: #a5ffd6;
+    width: 25%;
+    text-align: center;
+    border-radius: 1em;
+    padding: 1em;
+    transition: background-color 1s ease-in-out, width 1s ease-in-out 1s;
+}
+
+h1:hover {
+    width: 50%;
+}
+
+section div {
+    height: 100px;
+    width: 100px;
+    background-color: greenyellow;
+    margin: 20px 0;
+    transition: margin-left 3s;
+}
+
+section:hover div {
+    margin-left: 500px;
+}
+
+div:nth-of-type(1) {
+    transition-timing-function: ease-in;
+}
+
+div:nth-of-type(2) {
+    transition-timing-function: ease-out;
+}
+
+div:nth-of-type(3) {
+    transition-timing-function: cubic-bezier(0.7, 0, 0.84, 0);
+}
+
+div:nth-of-type(4) {
+    transition-timing-function: cubic-bezier(0.85, 0, 0.15, 1);
+}
